@@ -41,7 +41,7 @@ clean:
 	rm -f bin/prospero-nid
 
 bin/prospero-nid: bin/prospero-nid.c
-	$(CC) -static -o $@ $<
+	$(CC) -v -o $@ $<
 
 install: install-tools install-symlinks install-ldscripts install-toolchains
 
